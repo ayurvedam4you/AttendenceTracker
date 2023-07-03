@@ -1,0 +1,83 @@
+.table-container {
+  width: 70%;
+  margin-top: 80px;
+  margin-left: 120px;
+}
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.styled-table thead th {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: bold;
+}
+
+.styled-table tbody td {
+  padding: 8px;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+.dashboard {
+  display: flex;
+}
+.center-align {
+  text-align: center;
+}
+.edit-btn,.cancel-btn,.accept-btn{
+  color: dodgerblue;
+  cursor: pointer;
+  transition: .15s linear;
+}
+.edit-btn:hover,.cancel-btn:hover,.accept-btn:hover{
+opacity: .5;
+}
+.cancel-btn{
+  color:rgb(230, 57, 57);
+}
+.accept-btn{
+  color:green;
+}
+
+.month-btn,.month-viewer{
+  padding: 10px;
+  font-family: "Poppins",sans-serif;
+  transition: 0.25s all ease;
+  box-shadow: 2px 4px 11px 0px #5d5a5724;
+  border-radius: 20px;
+  border: none;
+  margin: 0 10px;
+}
+.month-btn{
+  padding: 10px 20px;
+}
+.month-selector{
+  padding: 30px;
+}
+.year-selector{
+  padding: 10px;
+  box-shadow: 2px 4px 11px 0px #8a858024;
+  border-radius: 20px;
+  border: none;
+  margin-left: 30px;
+}
+@media(max-width:1000px){
+  .dashboard {
+   flex-direction: column;
+  }.table-container {
+    width: 100vh;
+    margin-top: 80px;
+    margin-left: 0;
+}
+.center-align {
+  font-size: .8rem;
+}
+}

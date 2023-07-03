@@ -1,0 +1,196 @@
+html {
+  overflow-x: hidden;
+}
+
+.form-container {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 30px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 2px 4px 11px 0px #79717124;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+.input {
+  padding-left: 20px;
+  height: 50px;
+  border: none;
+  box-shadow: 2px 4px 11px 0px #7971714b;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.input.leave{
+  margin-bottom: 0;
+}
+.input:focus {
+  outline: none;
+}
+
+.button {
+  padding: 15px 65px;
+  align-self: center;
+}
+
+.button input {
+  border: none;
+  border-radius: 30px;
+  background-color: #054a91;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 2px 4px 11px 0px #79717168;
+  transition: 0.15s linear;
+}
+
+.button input:hover {
+  background-color: #f17300;
+}
+
+.button input:active {
+  box-shadow: none;
+}
+
+.form-container.edit {
+  width: 70%;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: "Select Your Logo";
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background: linear-gradient(to top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(to top, #e3e3e3, #f9f9f9);
+}
+
+.forgot-password {
+  color: #f17300;
+  cursor: pointer;
+  transition: 0.15s linear;
+}
+
+.forgot-password:hover {
+  opacity: 0.5;
+}
+
+.forgot-password:active {
+  box-shadow: 2px 4px 11px 0px #8a858024;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #5c6664;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+.select:hover::after {
+  color: #23b499;
+}
+.btn-danger{
+padding: 15px 50px;
+color: #fff;
+background-color: rgb(243, 42, 42);
+transition: 0.25s all ease;
+box-shadow: 2px 4px 11px 0px #8a858024;
+border-radius: 20px;
+border: none;
+font-family: "Poppins";
+}
+.download-btn{
+  padding: 15px 50px;
+  color: #fff;
+  background-color: #3a6ee8;
+  transition: 0.25s all ease;
+  box-shadow: 2px 4px 11px 0px #8a858024;
+  border-radius: 20px;
+  border: none;
+  font-family: "Poppins"; 
+}
+.btn-danger:hover{
+opacity: .7;
+}
+@media (max-width: 767px) {
+  .form-container {
+    padding: 0px;
+    width: 80%;
+    margin-left: 0;
+  }
+  .form {
+    width: 100%;
+    margin-left: 100px;
+  }
+  .form.edit{
+    width: 90%;
+    margin-left: 60px;
+}
+}

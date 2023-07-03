@@ -1,0 +1,33 @@
+.sidebar {
+  width: 200px;
+  height: 60vh;
+  position: sticky;
+  box-shadow: 2px 4px 11px 0px #7971714b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.logo-container img {
+  width: 150px;
+}
+.sidebar-content {
+  text-align: center;
+}
+ul li {
+  margin-right: 30px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 767px) {
+
+  .sidebar {
+    margin-left: 20px;
+}
+}

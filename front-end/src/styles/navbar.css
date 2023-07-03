@@ -1,0 +1,68 @@
+nav{
+  height: 80px;
+  box-shadow: 2px 4px 11px 0px #7971714b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+nav div{
+  padding: 0 30px;
+}
+nav img{
+  width: 150px;
+  margin-left: 10px;
+}
+nav button{
+  padding: 10px 30px;
+  background-color:#ff2020;
+  box-shadow: 2px 4px 11px 0px #7971714b;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-family: "Poppins";
+  transition: .15s linear;
+}
+nav button:hover{
+opacity: .8;
+}
+nav button:active{
+  box-shadow: none;
+}
+.nav-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.nav-section p{
+  font-weight: 400;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: .15s linear;
+}
+.nav-section p:hover{
+  opacity: .7;
+}
+@media (max-width: 767px) {
+.nav-section h3{
+  display:none ;
+}
+.nav-section p{
+ font-size:.8rem;
+}
+.nav-logo{
+  width: 80px;
+}
+nav.nav-dash{
+width: 100vh;
+}
+nav div {
+  padding: 0;
+}
+nav button {
+  padding: 7px 20px;
+  margin-right: 10px;
+}
+
+}

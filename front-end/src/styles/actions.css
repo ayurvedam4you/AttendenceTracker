@@ -1,0 +1,90 @@
+.actions {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 11px 0px #7971714b;
+  width: 50%;
+  height: 500px;
+  border-radius: 40px;
+}
+.actions-user{
+  align-self: flex-start;
+
+}
+.action-container.apply-leave{
+  padding-top: 0px;
+}
+.actions-items {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.actions-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.punch-out,
+.punch-in {
+  padding: 20px 100px;
+  font-size: 1.3rem;
+  background-color: #ff2020;
+  box-shadow: rgba(217, 32, 32, 0.568) 2px 2px 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-family: "Poppins";
+  transition: 0.15s linear;
+}
+.punch-out:hover,
+.punch-in:hover {
+  opacity: 0.8;
+}
+.punch-out:active,
+.punch-in:actin {
+  box-shadow: none;
+}
+.punch-in {
+  background-color: #57d136;
+  box-shadow: rgba(109, 216, 79, 0.66) 2px 2px 21px;
+  margin-top: 80px;
+}
+.punch-in.leave{
+  margin-top: 0;
+}
+textarea{
+  font-size: 1.2rem;
+  padding-top: 20px;
+}
+input.apply-leave {
+  padding: 5px 18px;
+  font-family: "Poppins",sans-serif;
+}
+textarea.apply-leave{
+  padding-bottom : 70px;
+}
+@media (max-width: 767px) {
+  .actions {
+    width: 80%;
+  }
+  .actions.apply-leave{
+    height: 450px;
+  }
+  .punch-in,.punch-out {
+    padding: 10px 30px;
+  }
+  .punch-out.apply-leave{
+    padding: 5px 18px;
+  }
+  textarea,.apply-leave{
+    font-size: .8rem;
+    width: 84%;
+    margin-left: 10px;
+  }
+  .select {
+    width: 16em;
+  }
+
+}
