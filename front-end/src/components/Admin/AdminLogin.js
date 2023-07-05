@@ -85,12 +85,14 @@ function sendOTP(){
           placeholder="Enter your Password"
         />
 
-        <p
-          className="forgot-password"
-          onClick={sendOTP}
-        >
-          Forgot Password
-        </p>
+     <p
+       className="forgot-password"
+       onClick={sendOTP}
+       style={{ display: "none" }}
+       >
+       Forgot Password
+       </p>
+
 
         <div className="button">
           <input type="submit" className="button" value="Submit" />
